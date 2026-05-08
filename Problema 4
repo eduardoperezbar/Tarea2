@@ -1,0 +1,12 @@
+#include <stdio.h>
+float pagomensual = 0, interes, dinero, temp1;
+int main()
+{
+    printf("Introduce la cantidad de dinero que depositaras\n");
+    scanf("%f",&dinero);
+    printf("Introduce la tasa de interes\n");
+    scanf("%f",&interes);
+    pagomensual=(dinero + (dinero * interes/100));
+    printf("El pago mensual es %.1f", pagomensual);
+    return 0;
+}
