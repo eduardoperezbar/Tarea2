@@ -1,0 +1,13 @@
+#include <stdio.h>
+int num1, num2, res;
+int main()
+{
+    printf("Vamos a sumar\n");
+    printf("Dame un numero\n");
+    scanf("%d",&num1);
+    printf("Dame un segundo numero\n");
+    scanf("%d",&num2);
+    res= num1 + num2; 
+    printf("El resultado de la suma es %i",res);
+    return 0;
+}
