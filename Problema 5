@@ -1,0 +1,13 @@
+#include <stdio.h>
+float cantidadapagar = 0, comprado;
+int main()
+{
+    printf("Introduce el monto comprado\n");
+    scanf("%f",&comprado);
+    if(comprado> 2500)
+        cantidadapagar = comprado-((comprado*8)/100);
+    else 
+    cantidadapagar = comprado; 
+    printf("La cantidad a pagar es\n%.2f", cantidadapagar);
+    return 0;
+}
