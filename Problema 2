@@ -1,0 +1,14 @@
+#include <stdio.h>
+int A = 0, Circ = 0, r = 0;
+double pi = 3.1415;
+int main()
+{
+    printf("Obtengamos el area\n");
+    printf("Dame el radio del circulo\n");
+    scanf("%d",&r);
+    A = (pi*(r*r)); 
+    Circ = ((pi)*2*(r));
+    printf("El area es %d\n", A);
+    printf("La circunferencia es %d", Circ);
+    return 0;
+}
