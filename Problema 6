@@ -1,0 +1,13 @@
+#include <stdio.h>
+float sueldomensual = 0, salario;
+int main()
+{
+    printf("Introduce el salario\n");
+    scanf("%f",&salario);
+    if(salario < 1000)
+        sueldomensual = salario + ((salario*15)/100);
+    else 
+        sueldomensual = salario + ((salario*12)/100);
+    printf("El sueldo mensual con aumento es \n%.1f", sueldomensual);
+    return 0;
+}
