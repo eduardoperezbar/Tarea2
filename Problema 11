@@ -1,0 +1,13 @@
+#include <stdio.h>
+int numero;
+int suma = 0, contador;
+int main()
+{
+    for(contador = 10; contador <= 50;)
+    {
+        suma = suma + contador;
+        contador = contador + 2;
+    }
+    printf("La suma de los pares contenidos entre 10 y 50 es %d\n", suma);
+    return 0;
+}
