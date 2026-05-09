@@ -1,0 +1,23 @@
+#include <stdio.h>
+float precio, costo, km, estancia;
+int main()
+{
+    printf("Introduce los kilometros que recorreras\n");
+    scanf("%f",&km);
+    printf("Introduce los dias de estancia\n");
+    scanf("%f",&estancia);
+    if(estancia > 7)
+    {   
+        if(km > 800)
+        {
+        precio = (km *0.23); 
+        costo = precio - ((precio*30)/100);
+        }
+        else
+            costo = km * 0.23;
+    }    
+    else 
+        costo = (km * 0.23);
+    printf("El costo del ticket es de \n%.1f", costo);
+    return 0;
+}
