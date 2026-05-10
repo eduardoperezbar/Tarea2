@@ -1,0 +1,24 @@
+#include <stdio.h>
+int arreglo[100];
+int n, i, numero, contador = 0;
+int main()
+{
+    printf("Cuantos numeros tendra el arreglo: ");
+    scanf("%d", &n);
+    for(i = 0; i < n;i++)
+    {
+        printf("Ingresa un numero: ");
+        scanf("%d", &arreglo[i]);
+    }
+    printf("Que numero deseas buscar: ");
+    scanf("%d", &numero);
+    for(i = 0; i < n;i++)
+    {
+        if(arreglo[i] == numero) 
+        {
+            contador++;
+        }
+    }
+    printf("El numero %d aparece %d veces\n", numero, contador);
+    return 0;
+}
