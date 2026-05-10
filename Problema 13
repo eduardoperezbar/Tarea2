@@ -1,0 +1,16 @@
+#include <stdio.h>
+int arreglo[100];
+int n, i, suma = 0;
+int main()
+{
+    printf("De cuantos numeros quieres hacer la suma: ");
+    scanf("%d", &n);
+    for(i = 0; i < n; i++)
+    {
+        printf("Ingresa un numero: ");
+        scanf("%d", &arreglo[i]);
+        suma = suma + arreglo[i];
+    }
+    printf("La suma es %d\n", suma);
+    return 0;
+}
